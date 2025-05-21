@@ -1,0 +1,8 @@
+<h2>Welcome, <%= user.fullName %> (<%= role %>)</h2>
+<p>Email: <%= user.email %></p>
+<p>College: <%= user.college %></p>
+<p>Branch: <%= user.branch || 'N/A' %></p>
+<p>Year: <%= user.year || 'N/A' %></p>
+<p>City: <%= user.city %></p>
+<p>State: <%= user.state %></p>
+<a href="/explore">Explore Other Users</a>

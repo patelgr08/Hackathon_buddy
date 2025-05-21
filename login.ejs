@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login to Hackathon Buddy</title>
+  <style>
+    /* Add your styles here */
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to Hackathon Buddy</h2>
+
+    <% if (error) { %>
+      <p style="color: red;"><%= error %></p>
+    <% } %>
+
+    <form action="/login" method="POST">
+      <label for="email">Email</label>
+      <input type="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="/signup">Sign up</a></p>
+  </div>
+</body>
+</html>

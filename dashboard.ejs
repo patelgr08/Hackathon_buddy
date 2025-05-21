@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 40px; }
+    a {
+      display: block;
+      margin: 20px;
+      font-size: 20px;
+      color: #3b82f6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Welcome, <%= role %>: <%= userEmail %></h2>
+  <a href="/profile">View Profile</a>
+  <a href="/explore">Explore Users</a>
+  <a href="/logout">Logout</a>
+</body>
+</html>

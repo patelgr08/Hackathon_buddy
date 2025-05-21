@@ -1,0 +1,17 @@
+<h2>Explore Other Users</h2>
+
+<h3>Students</h3>
+<ul>
+  <% students.forEach(student => { %>
+    <li><%= student.fullName %> - <%= student.college %> (<%= student.techStack %>)</li>
+  <% }) %>
+</ul>
+
+<h3>Mentors</h3>
+<ul>
+  <% mentors.forEach(mentor => { %>
+    <li><%= mentor.fullName %> - <%= mentor.college %> (<%= mentor.expertise || '' %>)</li>
+  <% }) %>
+</ul>
+
+<a href="/profile">Back to Profile</a>
